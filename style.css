@@ -1,0 +1,87 @@
+*{padding: 0; margin: 0}
+html,body {
+    margin: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    overflow-x: hidden;
+    background-color: grey;
+}
+
+.menutrai {
+    height: 100%;
+    width: 300px;
+    transition: .4s;
+    background-color: #478947;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    color: white;
+    z-index: 2;
+}
+.menutrai.hidenmenu {
+    transform: translateX(-100%);
+}
+.visiablemenu {
+    transform: translateX(300px);
+}
+
+li.list-group-item {
+    background: no-repeat;
+}
+
+
+li.list-group-item {
+    border: 0.5px solid;
+}
+
+.nut {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10%;
+    padding-left: 10%;
+    transition: 0.4s;
+    background-color: white;
+    transform-origin: 100% 0%;
+}
+
+button.btn.btn-info {
+    text-align: center;
+    margin: 0 auto;
+    width: 100px;
+    cursor: pointer;
+    display: flex;
+    margin-top: 10px;
+}
+
+.phuden {
+    position: fixed;
+    transition: .4s;
+    top :0px;
+    left: 0px;
+    background-color: #0000004f;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+.whenclickpush {
+    opacity: 1;
+    visibility: visible;
+}
+.noidung {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transition: cubic-bezier(.09,.7,.83,.67) .6s;
+    box-sizing: border-box;
+    perspective: 2000px;
+}
+
+.trangquay {
+    transform: rotateY(-18deg);
+}
